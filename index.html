@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Animal Crossing World</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+
+		<style>
+
+		
+		.loader{
+			position : fixed;
+			width:100px;
+			height:100px;
+			top : 0px;
+			left : 0px;
+			z-index: 99999;	
+			} 
+
+		.rond_max_19{
+			width:1400px;
+			height:900px;
+			background-image:url(logo1.png);
+			background-position:center;
+
+			background-repeat:no-repeat;
+			-webkit-animation:anim_max 1.5s infinite linear;
+			-moz-animation:anim_max 1.5s infinite linear;
+			-ms-animation:anim_max 1.5s infinite linear;
+			-o-animation:anim_max 1.5s infinite linear;
+			animation:anim_max 1.5s infinite linear;
+			position: absolute;
+			opacity: 1;
+
+		} 
+
+		.rond_min_19{
+			width:1400px;
+			height:900px;
+			background-image:url(logo2.png);
+			background-position:center;background-repeat:no-repeat;
+			-webkit-animation:anim_min 1.4s infinite linear;
+			-moz-animation:anim_min 1.4s infinite linear;
+			-ms-animation:anim_min 1.4s infinite linear;
+			-o-animation:anim_min 1.4s infinite linear;
+			animation:anim_min 1.4s infinite linear;
+			position: absolute;
+			opacity: 1;
+
+		} 
+
+		@-webkit-keyframes anim_max{
+			0%{-webkit-transform:rotate(0deg);
+				-moz-transform:rotate(0deg);
+				-ms-transform:rotate(0deg);
+				transform:rotate(0deg)
+			}
+			
+		    100%{-webkit-transform:rotate(360deg);
+		    	-moz-transform:rotate(360deg);
+		    	-ms-transform:rotate(360deg);
+		    	transform:rotate(360deg)
+		    	}
+		    } 
+
+		 @-webkit-keyframes anim_min{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 	   } 
+
+		 	100%{-webkit-transform:rotate(-720deg);
+		 		-moz-transform:rotate(-720deg);
+		 		-ms-transform:rotate(-720deg);
+		 		transform:rotate(-720deg)
+		 		}
+		} 
+
+		 @-moz-keyframes anim_max{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 	  } 
+		 	100%{-webkit-transform:rotate(360deg);
+		 		-moz-transform:rotate(360deg);
+		 		-ms-transform:rotate(360deg);
+		 		transform:rotate(360deg)
+		 		}
+	    } 
+
+		 @-moz-keyframes anim_min{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 		} 
+		 	100%{-webkit-transform:rotate(-720deg);
+		 		-moz-transform:rotate(-720deg);
+		 		-ms-transform:rotate(-720deg);
+		 		transform:rotate(-720deg)
+		 		}
+		 	} 
+
+		 @-ms-keyframes anim_max{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 	} 
+		 	100%{-webkit-transform:rotate(360deg);
+		 		-moz-transform:rotate(360deg);
+		 		-ms-transform:rotate(360deg);
+		 		transform:rotate(360deg)}} 
+
+		 @-ms-keyframes anim_min{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 	} 
+		 	100%{-webkit-transform:rotate(-720deg);
+		 		-moz-transform:rotate(-720deg);
+		 		-ms-transform:rotate(-720deg);
+		 		transform:rotate(-720deg)}
+		 	} 
+
+		 @keyframes anim_max{
+		 	0%{-webkit-transform:rotate(0deg);
+		 		-moz-transform:rotate(0deg);
+		 		-ms-transform:rotate(0deg);
+		 		transform:rotate(0deg)
+		 	   } 
+
+		 	100%{-webkit-transform:rotate(360deg);
+		 		-moz-transform:rotate(360deg);
+		 		-ms-transform:rotate(360deg);
+		 		transform:rotate(360deg)
+			    }
+		 	}
+
+
+		  @keyframes anim_min{
+		  	0%{-webkit-transform:rotate(0deg);
+		  		-moz-transform:rotate(0deg);
+		  		-ms-transform:rotate(0deg);
+		  		transform:rotate(0deg)
+		  	} 
+		  	100%{-webkit-transform:rotate(-720deg);
+		  		-moz-transform:rotate(-720deg);
+		  		-ms-transform:rotate(-720deg);transform:rotate(-720deg)
+		  		}
+		  	}
+		  
+			#blocker {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.1);
+				margin: 0;
+				padding: 0;
+			}
+
+			#instructions {
+				width: 100%;
+				height: 100%;
+
+				display: -webkit-box;
+
+				-webkit-box-pack: center;
+				-moz-box-pack: center;
+				box-pack: center;
+
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				box-align: center;
+
+				color: #1ee565;
+				text-align: center;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 24px;
+
+				cursor: pointer;
+				margin: 0;
+				padding: 0;
+
+			}
+
+             body{
+                
+                margin: 0;
+				padding: 0;
+
+             }
+
+
+			
+		</style>
+	</head>
+
+	<body onload="myFunction()">
+
+
+		
+		<div id="blocker">
+
+			<div id="instructions">
+				<center><img src="textures & images/logo4.png" style="height: 380px;width: 650px; margin:10px;"></center>
+				<b><span style="font-size:50px; color: #a56e3d ">Click to play </span>
+				<i>
+				<br /><br />
+
+				<b>Move: WASD<br/>
+				Jump: SPACE<br/>
+				Look: MOUSE</i>
+
+				<br /><br /></b>
+				<span style="font-size:35px; color: #ffcf4f; font-family:OCR A Std, monospace"> Enjoy!</span>
+			
+			</div>
+
+		</div>
+
+		<div id="home">
+				<img src="textures & images/home.jpg" style=" opacity: 1; position: absolute; margin: 0px; padding: 0; width:1490px; height: 810px">
+			
+
+
+	    	<center> <i><h1 style="margin: 250px; padding: 10px; font-family: Humming; color:#ffcf4f; font-size:70px; opacity: 1; position: absolute; width: 900px">Loading ...</h1></i> </center>
+
+			 <div class="loader">
+			
+		
+				<div class="rond_max_19">
+					<div class="rond_min_19">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" type="text/javascript" src="main.js" ></script>
+		<script type="text/javascript" src="ressources/dat.gui.min.js"></script>
+		<script src="https://cdnjs.cloudfare.com/ajax/libsjquery/3.4.1/jquery.min.js"></script>
+
+
+		<script>
+			var preloader= document.getElementById('home');
+
+			function myFunction(){
+				preloader.style.visibility= 'hidden';
+				preloader.style.opacity= '0';
+
+			}
+
+		</script>
+		
+	</body>
+</html>
